@@ -57,26 +57,26 @@ funList
 
   if (response.toUpperCase() === "A") {
     completeList[0] = getRandomDestination(placeList);
-    getAlert(anyList)
+    
   }
 
   if (response.toUpperCase() === "B") {
     completeList[1] = getRandomRest(foodList);
-    getAlert(anyList);
+  
   }
   if (response.toUpperCase() === "C") {
     completeList[2] = getRandomTransportation(travelList);
-    getAlert(anyList);
+  
   }
   if (response.toUpperCase() === "D") {
     completeList[3] = getRandomFun(funList);
-    getAlert(anyList);
+  
   }
   if (response.toUpperCase() === "CONFIRM"){
-    console.log(alert("Your Day Trip: Destination: "+completeList[0]+ "                                             Restaraunt: " +completeList[1]+ "                                                                         Transportation: "+completeList[2]+"                                                           Entertainment: "+completeList[3]+""));
+    return(anyList)
+    
   }
-  //else(getAlert(anyList))
-  return anyList
+  getAlert(anyList)
 }
 // randomized values
 let place = getRandomDestination(placeList)
@@ -92,3 +92,4 @@ completeList.push(fun)
 // prompt
 
 getAlert(completeList)
+console.log(alert("Your Day Trip: Destination: "+completeList[0]+ "                                             Restaraunt: " +completeList[1]+ "                                                                         Transportation: "+completeList[2]+"                                                           Entertainment: "+completeList[3]+""));
